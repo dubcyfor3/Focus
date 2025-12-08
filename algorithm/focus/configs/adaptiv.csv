@@ -1,0 +1,17 @@
+model,dataset,adaptiv_threshold
+llava_vid,videomme,0.5
+llava_vid,mlvu,0.6
+llava_vid,mvbench,0.5
+llava_onevision,videomme,0.5
+llava_onevision,mlvu,0.5
+llava_onevision,mvbench,0.5
+minicpm_v,videomme,0.15
+minicpm_v,mlvu,0.2
+minicpm_v,mvbench,0.1
+llava_onevision,vqav2,0.2
+llava_onevision,mme,0.5
+llava_onevision,mmbench,0.5
+qwen2_5_vl,vqav2,0.4
+qwen2_5_vl,mme,0.4
+qwen2_5_vl,mmbench,0.4
+default,,0.6

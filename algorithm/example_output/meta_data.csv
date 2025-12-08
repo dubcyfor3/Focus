@@ -1,0 +1,16 @@
+Model,Dataset,Sequence length,Num frames,Num patches,Median index
+llava_vid,videomme,11648,64,182,1
+llava_vid,mlvu,11648,64,182,7
+llava_vid,mvbench,2366,13,182,1
+llava_onevision,videomme,6272,32,196,3
+llava_onevision,mlvu,6272,32,196,8
+llava_onevision,mvbench,6272,32,196,2
+minicpm_v,videomme,12736,64,199,7
+minicpm_v,mlvu,12736,64,199,4
+minicpm_v,mvbench,402,6,67,7
+qwen2_5_vl,vqav2,414,1,414,9
+llava_onevision,vqav2,3149,16,196,6
+qwen2_5_vl,mme,273,1,273,1
+qwen2_5_vl,mmbench,280,1,280,3
+llava_onevision,mme,1554,7,222,2
+llava_onevision,mmbench,2052,10,205,1

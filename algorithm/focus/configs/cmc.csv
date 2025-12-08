@@ -1,0 +1,11 @@
+model,dataset,CMC_threshold,CMC_query_threshold,CMC_attn_threshold
+llava_vid,videomme,0.4,0.8,0.00005
+llava_vid,mlvu,0.4,0.8,0.00005
+llava_vid,mvbench,0.4,0.8,0.00005
+llava_onevision,videomme,0.5,0.6,0.00005
+llava_onevision,mlvu,0.5,0.6,0.00005
+llava_onevision,mvbench,0.5,0.6,0.00005
+minicpm_v,videomme,0.4,0.8,0.00005
+minicpm_v,mlvu,0.4,0.8,0.00005
+minicpm_v,mvbench,0.4,0.8,0.00005
+default,,0.4,0.8,0.00005

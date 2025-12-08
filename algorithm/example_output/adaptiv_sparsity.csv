@@ -1,0 +1,16 @@
+Model,Dataset,Sparsity
+llava_vid,videomme,0.5215487637362637
+llava_vid,mlvu,0.3251717032967033
+llava_vid,mvbench,0.4107377839303211
+llava_onevision,videomme,0.3680325255102041
+llava_onevision,mlvu,0.3954559948979592
+llava_onevision,mvbench,0.4202973533163263
+minicpm_v,videomme,0.4927449748743718
+minicpm_v,mlvu,0.4188442211055276
+minicpm_v,mvbench,0.5008537444046671
+qwen2_5_vl,vqav2,0.5011738103060553
+qwen2_5_vl,mme,0.4602128458890826
+qwen2_5_vl,mmbench,0.4515493384266922
+llava_onevision,vqav2,0.810353291942987
+llava_onevision,mme,0.3647047532490203
+llava_onevision,mmbench,0.3265114096290118

@@ -1,0 +1,16 @@
+Models,Dataset,Metric,Dense,FF,Adaptiv,CMC,Focus,INT8_Dense,INT8_Focus
+llava_vid,videomme,Acc.,64.15,62.00,62.44,62.52,62.74,64.22,62.33
+llava_vid,mlvu,Acc.,67.74,65.38,65.94,65.17,65.99,68.21,64.94
+llava_vid,mvbench,Acc.,60.33,57.20,57.73,58.18,58.20,59.75,57.95
+llava_onevision,videomme,Acc.,58.41,57.70,58.33,58.11,58.70,58.70,57.44
+llava_onevision,mlvu,Acc.,63.32,62.54,62.22,62.50,62.52,63.38,62.41
+llava_onevision,mvbench,Acc.,58.38,56.93,56.83,56.75,56.78,58.55,56.18
+minicpm_v,videomme,Acc.,58.81,58.81,58.07,55.89,58.30,58.63,57.96
+minicpm_v,mlvu,Acc.,55.89,54.80,54.84,43.80,53.59,55.93,53.22
+minicpm_v,mvbench,Acc.,55.63,52.43,53.70,48.78,54.30,55.13,54.03
+llava_onevision,vqav2,Acc.,84.32,,82.48,,83.01,,
+llava_onevision,mme,Acc.,1067.27,,1036.27,,1044.79,,
+llava_onevision,mmbench,Acc.,84.99,,84.49,,83.46,,
+qwen2_5_vl,vqav2,Acc.,84.48,,79.77,,81.73,,
+qwen2_5_vl,mme,Acc.,1337.66,,1129.56,,1238.88,,
+qwen2_5_vl,mmbench,Acc.,85.69,,83.79,,84.46,,

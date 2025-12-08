@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "focus"
+version = "0.1.0"
+description = "Focus: A Streaming Concentration Architecture for Efficienct Vision-Language Models"
+requires-python = ">=3.11"
+authors = [
+    { name = "Chiyue Wei" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "torch>=2.1.0",
+    "transformers>=4.48.2,<4.50.0",
+    "accelerate>=0.29.1",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "einops",
+    "qwen-vl-utils==0.0.10",
+    "bitsandbytes==0.48.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+]
+
+main = [
+    "transformers==4.48.2"
+]
+
+qwen25_vl = [
+    "transformers==4.49.0",
+]
+
+[tool.setuptools]
+# Install with: pip install -e . (from focus directory)
+# The package files are in the current directory, map 'focus' package to current dir
+packages = ["focus"]
+
+[tool.setuptools.package-dir]
+focus = "."
+
