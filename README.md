@@ -56,7 +56,7 @@ This repository provides a full-stack implementation of Focus, including the alg
 1. **Clone the repository**
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:dubcyfor3/Focus.git
 cd Focus
 ```
 
