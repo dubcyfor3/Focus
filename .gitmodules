@@ -1,12 +1,12 @@
-[submodule "scalesim"]
+[submodule "3rd_party/scalesim"]
 	path = 3rd_party/scalesim
-	url = https://github.com/dubcyfor3/SCALE-Sim.git
-[submodule "cacti"]
+	url = git@github.com:dubcyfor3/SCALE-Sim.git
+[submodule "3rd_party/cacti"]
 	path = 3rd_party/cacti
-	url = https://github.com/HewlettPackard/cacti.git
-[submodule "DRAMsim3"]
+	url = git@github.com:HewlettPackard/cacti.git
+[submodule "3rd_party/DRAMsim3"]
 	path = 3rd_party/DRAMsim3
-	url = https://github.com/umd-memsys/DRAMsim3.git
-[submodule "LLaVA-NeXT"]
+	url = git@github.com:umd-memsys/DRAMsim3.git
+[submodule "3rd_party/LLaVA-NeXT"]
 	path = 3rd_party/LLaVA-NeXT
-	url = https://github.com/LLaVA-VL/LLaVA-NeXT.git
+	url = git@github.com:LLaVA-VL/LLaVA-NeXT.git
