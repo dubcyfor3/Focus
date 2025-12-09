@@ -76,6 +76,8 @@ class Focus(nn.Module):
         self.sparse_layer_by_layer = False
         self.similarity_analysis_mode = False
 
+        self.extract_attention_layer = []
+
         self.model_name = model_name
         self.dataset_name = dataset_name
 
