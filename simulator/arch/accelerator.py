@@ -17,7 +17,7 @@ class Accelerator:
         self.dram_config = {
             'config_name': 'DDR4_4Gb_x16_2133',
             'bandwidth': 64 * 1024 * 1024 * 1024, # 64 GB/s
-            'energy_per_byte': 99.98 * 1e-9, # 99.98 * 1e-9 mJ/byte
+            'energy_per_byte': 99.98 * 1e-9, # 99.98 * 1e-9 mJ/byte from DRAMsim3
         }
 
         if SEC_only:

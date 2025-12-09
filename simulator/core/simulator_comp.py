@@ -320,8 +320,8 @@ class SimulatorComp:
         """
         Call the scalesim with the given matrix sizes.
         """
-        config = os.path.join(os.path.dirname(__file__), "scalesim_cfg/config_test.cfg")
-        topology = os.path.join(os.path.dirname(__file__), "scalesim_cfg/gemm_test.csv")
+        config = os.path.join(os.path.dirname(__file__), "scalesim_cfg/config.cfg")
+        topology = os.path.join(os.path.dirname(__file__), "scalesim_cfg/gemm.csv")
         gemm_input = True
 
         set_csv_column(topology, "M", M_size)

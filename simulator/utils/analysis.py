@@ -137,8 +137,11 @@ def worst_case_analysis(trace_dir, output_dir):
 
 
 if __name__ == "__main__":
-    output_dir = "results"
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-    trace_dir = "../algorithm/example_output"
-    worst_case_analysis(trace_dir, output_dir)
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--trace_dir', type=str, default='../algorithm/output')
+    parser.add_argument('--output_dir', type=str, default='results')
+    args = parser.parse_args()
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
+    worst_case_analysis(args.trace_dir, args.output_dir)

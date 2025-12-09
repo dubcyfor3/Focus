@@ -60,7 +60,7 @@ class SparseInfo:
             # find the row where model name and dataset name match
             row = df[(df['Model'] == model) & (df['Dataset'] == dataset)]
             assert len(row) == 1, "Model and dataset name must match exactly one row"
-            self.info_dict = {'linear_sparsity': row['linear_sparsity'].values[0], 'q_sparsity': row['q_sparsity'].values[0], 's_sparsity': row['s_sparsity'].values[0]}
+            self.info_dict = {'linear_sparsity': row['linear_sparsity'].values[0], 'q_sparsity': row['query_sparsity'].values[0], 's_sparsity': row['attn_score_sparsity'].values[0]}
         elif type == 'adaptiv':
             path = 'adaptiv_sparsity.csv'
             path = os.path.join(self.trace_dir, path)
