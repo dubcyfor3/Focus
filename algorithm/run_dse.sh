@@ -27,27 +27,20 @@ fi
 
 TRACE_DIR="${TRACE_META_DIR}/m_tile_size_dse/"
 
-gemm_m_sizes=(-1 4096 2048 1024 512 128 32)
-
-for gemm_m_size in "${gemm_m_sizes[@]}"; do
+for gemm_m_size in -1 4096 2048 1024 512 128 32; do
     python -m run_eval --model llava_vid --model_args pretrained=lmms-lab/LLaVA-Video-7B-Qwen2,conv_template=qwen_1_5,max_frames_num=64,mm_spatial_pool_mode=average --tasks videomme --focus --batch_size 1 --log_samples --log_samples_suffix llava_vid --output_path $OUTPUT_PATH $LIMIT_ARG $TRACE_ARGS --trace_dir $TRACE_DIR --trace_name llava_vid_videomme_${gemm_m_size} --trace_meta_dir $TRACE_META_DIR --gemm_m_size $gemm_m_size $WRITE_ARGS --write_accuracy_table_name dse_a_m_tile_accuracy.csv
 done
 
 TRACE_DIR="${TRACE_META_DIR}/block_size_dse/"
 
-temporal_block_sizes=(1 2 3)
-spatial_block_sizes=(1 2 3)
-
-for temporal_block_size in "${temporal_block_sizes[@]}"; do
-    for spatial_block_size in "${spatial_block_sizes[@]}"; do
+for temporal_block_size in 1 2 3; do
+    for spatial_block_size in 1 2 3; do
         python -m run_eval --model llava_vid --model_args pretrained=lmms-lab/LLaVA-Video-7B-Qwen2,conv_template=qwen_1_5,max_frames_num=64,mm_spatial_pool_mode=average --tasks videomme --focus --batch_size 1 --log_samples --log_samples_suffix llava_vid --output_path $OUTPUT_PATH $LIMIT_ARG $TRACE_ARGS --trace_dir $TRACE_DIR --trace_name llava_vid_videomme_${temporal_block_size}x${spatial_block_size}x${spatial_block_size} --trace_meta_dir $TRACE_META_DIR --frame_block_size $temporal_block_size --block_size $spatial_block_size $WRITE_ARGS --write_accuracy_table_name dse_c_block_accuracy.csv
     done
 done
 
 TRACE_DIR="${TRACE_META_DIR}/vector_size_dse/"
 
-vector_sizes=(4096 2048 512 128 32 8)
-
-for vector_size in "${vector_sizes[@]}"; do
+for vector_size in 4096 2048 512 128 32 8; do
     python -m run_eval --model llava_vid --model_args pretrained=lmms-lab/LLaVA-Video-7B-Qwen2,conv_template=qwen_1_5,max_frames_num=64,mm_spatial_pool_mode=average --tasks mlvu --focus --batch_size 1 --log_samples --log_samples_suffix llava_vid --output_path $OUTPUT_PATH $LIMIT_ARG $TRACE_ARGS --trace_dir $TRACE_DIR --trace_name llava_vid_mlvu_${vector_size} --trace_meta_dir $TRACE_META_DIR --vector_size $vector_size $WRITE_ARGS --write_accuracy_table_name dse_b_vector_accuracy.csv
 done
