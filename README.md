@@ -100,6 +100,7 @@ pip install -e .
 # Install Focus
 cd ../focus
 pip install -e '.[main]'   # '[main]' ensures the correct transformers version
+# pip install -e '.[qwen25_vl]' # run this when running QWen2.5-VL
 ```
 
 ---

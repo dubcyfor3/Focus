@@ -62,7 +62,7 @@ We conduct comprehensive design space exploration for Focus. We scan over the hy
 - Block size
 
 ```bash
-sh run_dse.sh   # (Estimated time: 20 minutes)
+sh run_dse.sh   # (Estimated time: 70 minutes)
 ```
 
 
