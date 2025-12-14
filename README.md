@@ -6,7 +6,7 @@
 <img src="./focus_overview.png" width="800">
 </p>
 <p align="center">
-*Focus* Architecture Overview
+<em>Focus</em> Architecture Overview
 </p>
 
 This repository provides a full-stack implementation of *Focus*, including the algorithm, architecture simulator, RTL hardware design, and baselines. It reproduces all experimental results reported in our evaluation.
