@@ -3,7 +3,7 @@
 ***Focus*** is a hardware–algorithm co-designed architecture that accelerates Vision-Language Model (VLM) inference by eliminating redundancy in visual tokens. It introduces a **multilevel concentration** pipeline—covering semantic-, block-, and vector-level redundancy—to reorganize VLM inputs into a hardware-friendly, locality-preserving format. An overview of ***Focus*** design is shown below
 
 <p align="center">
-<iframe src="./focus_overview.pdf" width="800" height="600"></iframe>
+<iframe src="./focus_overview.png" width="800" height="600"></iframe>
 </p>
 <p align="center">
 *Focus* Architecture Overview
