@@ -1,9 +1,9 @@
-# Focus and Baselines Hardware Implementation
+# *Focus* and Baselines Hardware Implementation
 
-This directory contains RTL (Register Transfer Level) implementations in Verilog for the Focus architecture and baseline designs. These hardware modules are synthesized using Synopsys Design Compiler (DC) for area and power evaluation.
+This directory contains RTL (Register Transfer Level) implementations in Verilog for the *Focus* architecture and baseline designs. These hardware modules are synthesized using Synopsys Design Compiler (DC) for area and power evaluation.
 
-## Focus Architecture Hierarchy
-The RTL part of Focus Architecture mainly consists of a systolic array, similarity concentrator (SIC), and semantic concentrator (SEC), and special function unit (SFU)
+## *Focus* Architecture Hierarchy
+The RTL part of *Focus* Architecture mainly consists of a systolic array, similarity concentrator (SIC), and semantic concentrator (SEC), and special function unit (SFU)
 ```
 ├── Systolic Array (traditional_systolic.v)
 │   └── traditional_mac
@@ -78,7 +78,7 @@ The RTL part of Focus Architecture mainly consists of a systolic array, similari
 
 ## Baseline Architecture 
 
-The core logic of baselines are also implemented in RTL. All baselines is equipped with the same SFU as Focus.
+The core logic of baselines are also implemented in RTL. All baselines is equipped with the same SFU as *Focus*.
 
 Systolic Array
 ```

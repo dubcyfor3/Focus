@@ -1,8 +1,10 @@
-# **Focus: A Streaming Concentration Architecture for Efficient Vision-Language Models**
+# ***Focus***: A Streaming Concentration Architecture for Efficient Vision-Language Models
 
-**Focus** is a hardware–algorithm co-designed architecture that accelerates Vision-Language Model (VLM) inference by eliminating redundancy in visual tokens. It introduces a **multilevel concentration** pipeline—covering semantic-, block-, and vector-level redundancy—to reorganize VLM inputs into a hardware-friendly, locality-preserving format.
+***Focus*** is a hardware–algorithm co-designed architecture that accelerates Vision-Language Model (VLM) inference by eliminating redundancy in visual tokens. It introduces a **multilevel concentration** pipeline—covering semantic-, block-, and vector-level redundancy—to reorganize VLM inputs into a hardware-friendly, locality-preserving format. An overview of ***Focus*** design is shown below
 
-This repository provides a full-stack implementation of Focus, including the algorithm, architecture simulator, RTL hardware design, and baselines. It reproduces all experimental results reported in our evaluation.
+![Focus Overview](focus_overview.pdf)
+
+This repository provides a full-stack implementation of *Focus*, including the algorithm, architecture simulator, RTL hardware design, and baselines. It reproduces all experimental results reported in our evaluation.
 
 ---
 
@@ -12,7 +14,7 @@ This repository provides a full-stack implementation of Focus, including the alg
 >
 > This repository contains three major components, each with a detailed README:
 >
-> * **[Algorithm](algorithm/README.md)** — Focus algorithm, sparse-trace generation, and accuracy evaluation.
+> * **[Algorithm](algorithm/README.md)** — *Focus* algorithm, sparse-trace generation, and accuracy evaluation.
 > * **[Simulator](simulator/README.md)** — Performance modeling and design-space exploration.
 > * **[RTL Hardware](rtl/README.md)** — Verilog implementation of Focus hardware modules.
 
@@ -20,7 +22,7 @@ This repository provides a full-stack implementation of Focus, including the alg
 
 ## **Repository Structure**
 
-* **`algorithm/`** – Focus algorithm implementation and accuracy evaluation.
+* **`algorithm/`** – *Focus* algorithm implementation and accuracy evaluation.
 
 * **`simulator/`** – Architecture performance simulator.
 
@@ -97,7 +99,7 @@ make
 cd ../../algorithm/lmms-eval
 pip install -e .
 
-# Install Focus
+# Install *Focus*
 cd ../focus
 pip install -e '.[main]'   # '[main]' ensures the correct transformers version
 # pip install -e '.[qwen25_vl]' # run this when running QWen2.5-VL
@@ -105,7 +107,7 @@ pip install -e '.[main]'   # '[main]' ensures the correct transformers version
 
 ---
 
-## **Running VLMs with Focus**
+## **Running VLMs with *Focus***
 
 ### **1. Algorithm: Generate Sparse Traces & Evaluate Accuracy**
 
@@ -177,5 +179,5 @@ We thank the authors and contributors of these projects for their valuable work.
 
 ---
 
-Thank you for using **Focus**!
+Thank you for using ***Focus***!
 If you have questions or issues, please feel free to open an issue or pull request.
