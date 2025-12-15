@@ -5,6 +5,7 @@ import glob
 import os
 import sys
 import torch
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -61,13 +62,19 @@ def worst_case_analysis(trace_dir, output_dir):
         all_values = all_values[all_values >= 10]
         all_values_np = all_values.numpy()
         
+        # Set backend and font properties before creating figure
+        mpl.use("pdf")  # ensure PDF backend
+        
+        mpl.rcParams.update({
+            "pdf.fonttype": 42,   # embed TrueType (NO Type 3)
+            "ps.fonttype": 42,
+            "font.family": "sans-serif",
+            "font.sans-serif": ["Helvetica Neue", "Helvetica", "Arial", "Liberation Sans", "DejaVu Sans", "Nimbus Sans L", "sans-serif"],
+            "text.usetex": False,  # keep False unless you REALLY need LaTeX
+        })
+        
         # Create dual-axis plot with density and utilization
         fig, ax1 = plt.subplots(figsize=(12, 4))
-        
-        # Set font properties
-        plt.rcParams['font.family'] = 'sans-serif'
-        plt.rcParams['font.sans-serif'] = ['Helvetica', 'Arial', 'DejaVu Sans', 'Liberation Sans', 'sans-serif']
-        plt.rcParams['font.size'] = 14
         
         # Left axis: Probability density (Histogram)
         color1 = '#67BB35'  # Darker green
