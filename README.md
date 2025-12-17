@@ -1,5 +1,11 @@
 # ***Focus***: A Streaming Concentration Architecture for Efficient Vision-Language Models
 
+[![arXiv](https://img.shields.io/badge/arXiv-2512.14661-b31b1b)](https://arxiv.org/abs/2512.14661)
+[![HPCA 2026](https://img.shields.io/badge/Accepted-HPCA%202026-blue)](https://conf.researchr.org/home/hpca-2026)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+
 ***Focus*** is a hardware–algorithm co-designed architecture that accelerates Vision-Language Model (VLM) inference by eliminating redundancy in visual tokens. It introduces a **multilevel concentration** pipeline—covering semantic-, block-, and vector-level redundancy—to reorganize VLM inputs into a hardware-friendly, locality-preserving format. An overview of ***Focus*** design is shown below
 
 <p align="center">
@@ -184,5 +190,16 @@ We thank the authors and contributors of these projects for their valuable work.
 
 ---
 
-Thank you for using ***Focus***!
-If you have questions or issues, please feel free to open an issue or pull request.
+## **Citation**
+If you find *Focus* helpful in your project or research, please consider citing our paper:
+```
+@misc{wei2025focus,
+      title={Focus: A Streaming Concentration Architecture for Efficient Vision-Language Models}, 
+      author={Chiyue Wei and Cong Guo and Junyao Zhang and Haoxuan Shan and Yifan Xu and Ziyue Zhang and Yudong Liu and Qinsi Wang and Changchun Zhou and Hai "Helen" Li and Yiran Chen},
+      year={2025},
+      eprint={2512.14661},
+      archivePrefix={arXiv},
+      primaryClass={cs.AR},
+      url={https://arxiv.org/abs/2512.14661}, 
+}
+```
