@@ -3,7 +3,6 @@ env
 *.pyc
 output/
 data/
-*.pth
 lm_cache
 .idea
 build
@@ -45,20 +44,3 @@ lmms_eval/tasks/mlvu/__pycache__/utils.cpython-310.pyc
 
 scripts/
 .env
-
-
-# hardware/b158lut_ws
-# hardware/share
-# !hardware/share/setup_synopsys_csh.sh
-/hardware/*
-!hardware/rtl/
-!hardware/tb/
-!hardware/golden/
-!hardware/scripts/
-
-!hardware/share/
-hardware/share/*
-!hardware/share/setup_synopsys_csh.sh
-
-!hardware/data/
-hardware/data/*
