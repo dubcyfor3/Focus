@@ -1,4 +1,4 @@
-Model,Dataset,linear_sparsity,q_sparsity,s_sparsity
+Model,Dataset,linear_sparsity,query_sparsity,attn_score_sparsity
 llava_vid,videomme,0.5787517040967941,0.6745603175035545,0.580766528348128
 llava_vid,mlvu,0.3981713593006134,0.603928359065737,0.5399106820976293
 llava_vid,mvbench,0.5335268287360668,0.6373441694091473,0.2293205799853442

@@ -132,7 +132,7 @@ def dse_num_scatter(args):
                 output_buffer_area = simulator.accelerator.buffer_dict['output']['area']
                 result_dict['buffer_area'] = concentrate_out_buffer_area + output_buffer_area
                 result_dict['num_scatter'] = num_scatter
-                file_name = "dse_d_num_scatter"
+                file_name = "dse_d_num_scatter_accumulator"
                 save_result(result_dict, f"{args.output_dir}/{file_name}.csv")
 
 def run_quantization(args):
